@@ -51,7 +51,7 @@ function TodoApp({ initialTodos }) {
           <div className="col-md-6">
             <section className="mb-4">
               <h3>Top Todo</h3>
-              {todos.length > 0 ? <TopTodo /> : <div>No todos yet</div>}
+              {todos.length > 0 ? <TopTodo todos={todos} /> : <div>No todos yet</div>}
             </section>
 
             <section>
