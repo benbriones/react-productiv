@@ -20,11 +20,12 @@ function TodoForm({ initialFormData = blankFormData, handleSave }) {
 
   const [formData, setFormData] = useState(initialFormData);
 
-  const { title, description, priority } = initialFormData;
+  const { title, description, priority } = formData;
 
   /** Update form input. */
   function handleChange(evt) {
     const { name, value } = evt.target;
+
     setFormData(fData => ({
       ...fData,
       [name]: value,

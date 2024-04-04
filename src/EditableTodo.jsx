@@ -15,11 +15,12 @@ import TodoForm from "./TodoForm";
 function EditableTodo({ todo, update, remove }) {
 
   const [isEditing, setIsEditing] = useState(false);
-  const { id, title, description, priority } = todo
+  const { id, title, description, priority } = todo;
 
   /** Toggle if this is being edited */
   function toggleEdit() {
-    setIsEditing(!isEditing);
+    // setIsEditing(!isEditing);
+    setIsEditing(isEditing => !isEditing);
   }
 
   /** Call remove fn passed to this. */

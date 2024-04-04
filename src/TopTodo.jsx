@@ -10,6 +10,8 @@ import Todo from "./Todo";
  * TodoApp -> TopTodo
  */
 
+// TODO: add, if no top, return null
+
 function TopTodo({todos}) {
   // lowest-priority # is the highest priority
 
