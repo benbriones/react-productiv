@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`todo > matches snapshot 1`] = `
+<div>
+  <div
+    class="Todo"
+    id="1"
+  >
+    <div>
+      <b>
+        cook
+      </b>
+       
+      <small>
+        (Priority: 
+        1
+        )
+      </small>
+    </div>
+    <div>
+      <small>
+        dinner
+      </small>
+    </div>
+  </div>
+</div>
+`;
