@@ -39,9 +39,6 @@ describe("TodoForm", function () {
         const titleInput =  getByLabelText("Title")
         const descriptionInput =  getByLabelText("Description")
         const priorityInput =  getByLabelText("Priority:")
-        // const addBtn =  queryByText("Gø!")
-        // console.log("*****", addBtn)
-
 
         fireEvent.change(titleInput, {target: { value: "Get Afters"}})
         fireEvent.change(descriptionInput, {target: { value: "BOGO!!!"}})
@@ -52,15 +49,6 @@ describe("TodoForm", function () {
         expect(titleInput.value).toBe("Get Afters")
         expect(descriptionInput.value).toBe("BOGO!!!")
         expect(priorityInput.value).toBe("1")
-
-        // item exists
-        // expect(queryByText("Get Afters")).toBeInTheDocument();
-        // expect(queryByText("BOGO!!!")).toBeInTheDocument();
-        // expect(queryByText("priority: 1")).toBeInTheDocument();
-
-
-
-
 
     })
 

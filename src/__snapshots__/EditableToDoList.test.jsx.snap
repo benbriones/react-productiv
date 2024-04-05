@@ -2,7 +2,9 @@
 
 exports[`EditableToDoList > matches snapshot 1`] = `
 <div>
-  <div>
+  <div
+    class="EditableTodoList"
+  >
     <div
       class="EditableTodo"
     >
