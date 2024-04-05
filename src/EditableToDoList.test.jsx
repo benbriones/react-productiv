@@ -29,7 +29,6 @@ describe("EditableToDoList", function () {
     it ("contains all editable todos", function () {
         // const { container } = render(<EditableTodoList todos={testTodos} />)
         const rendered = render(<EditableTodoList todos={testTodos} />)
-        console.log(rendered)
 
         expect(rendered.queryByText("celebrate bday")).toBeInTheDocument
         expect(rendered.queryByText("eat pocky")).toBeInTheDocument

@@ -44,7 +44,6 @@ describe("TodoForm", function () {
         fireEvent.change(descriptionInput, {target: { value: "BOGO!!!"}})
         fireEvent.change(priorityInput, {target: { value: 1}})
 
-        console.log(titleInput.value)
 
         expect(titleInput.value).toBe("Get Afters")
         expect(descriptionInput.value).toBe("BOGO!!!")

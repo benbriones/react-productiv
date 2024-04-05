@@ -29,7 +29,6 @@ describe("TodoApp", function () {
         const priorityInput = getByLabelText("Priority:");
         const addBtn = queryByText("Gø!");
 
-        console.log(titleInput.value);
 
         fireEvent.change(titleInput, { target: { value: "Get Afters" } });
         fireEvent.change(descriptionInput, { target: { value: "BOGO!!!" } });
@@ -63,7 +62,6 @@ describe("TodoApp", function () {
         const priorityInput = getByLabelText("Priority:");
         const addBtn = queryByText("Gø!");
 
-        console.log(titleInput.value);
 
         fireEvent.change(titleInput, { target: { value: "Get Afters" } });
         fireEvent.change(descriptionInput, { target: { value: "BOGO!!!" } });
