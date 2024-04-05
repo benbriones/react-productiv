@@ -1,0 +1,137 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EditableToDoList > matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="EditableTodo"
+    >
+      <div
+        class="mb-3"
+      >
+        <div
+          class="float-end text-sm-end"
+        >
+          <button
+            class="EditableTodo-toggle btn-link btn btn-sm"
+          >
+            Edit
+          </button>
+          <button
+            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+          >
+            Del
+          </button>
+        </div>
+        <div
+          class="Todo"
+          id="4"
+        >
+          <div>
+            <b>
+              celebrate bday
+            </b>
+             
+            <small>
+              (Priority: 
+              1
+              )
+            </small>
+          </div>
+          <div>
+            <small>
+              for dinner
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="EditableTodo"
+    >
+      <div
+        class="mb-3"
+      >
+        <div
+          class="float-end text-sm-end"
+        >
+          <button
+            class="EditableTodo-toggle btn-link btn btn-sm"
+          >
+            Edit
+          </button>
+          <button
+            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+          >
+            Del
+          </button>
+        </div>
+        <div
+          class="Todo"
+          id="5"
+        >
+          <div>
+            <b>
+              eat pocky
+            </b>
+             
+            <small>
+              (Priority: 
+              2
+              )
+            </small>
+          </div>
+          <div>
+            <small>
+              mens pocky only
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="EditableTodo"
+    >
+      <div
+        class="mb-3"
+      >
+        <div
+          class="float-end text-sm-end"
+        >
+          <button
+            class="EditableTodo-toggle btn-link btn btn-sm"
+          >
+            Edit
+          </button>
+          <button
+            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+          >
+            Del
+          </button>
+        </div>
+        <div
+          class="Todo"
+          id="6"
+        >
+          <div>
+            <b>
+              get dessert
+            </b>
+             
+            <small>
+              (Priority: 
+              3
+              )
+            </small>
+          </div>
+          <div>
+            <small>
+              afters only
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

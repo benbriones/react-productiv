@@ -1,7 +1,7 @@
 import {describe, it, expect } from "vitest";
 
 import React from "react";
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import EditableTodo from "./EditableTodo";
 
 describe("EditableToDo", function () {
@@ -14,21 +14,33 @@ describe("EditableToDo", function () {
     render(<EditableTodo todo={testTodo}  />);
   });
 
-//   it("matches snapshot", function () {
-//     const { container } = render(<TopTodo todos={testTodos} />)
-//     expect(container).toMatchSnapshot();
-//   });
+  it("matches snapshot", function () {
+    const { container } = render(<EditableTodo todo={testTodo} />)
+    expect(container).toMatchSnapshot();
+  });
 
-//   it ("rendered contains expected", function () {
-//     const { container } = render(<TopTodo todos={testTodos} />)
-//     const topTodo = container.querySelector(".Todo")
-//     expect(topTodo).toContainHTML("celebrate");
-//   });
+  it ("rendered contains expected", function () {
+    const { container } = render(<EditableTodo todo={testTodo} />)
+    const topTodo = container.querySelector(".Todo")
+    expect(topTodo).toContainHTML("celebrate");
+  });
 
-//   it ("did not render if not topTodo", function () {
-//     const { container } = render(<TopTodo todos={testTodos} />)
-//     const topTodo = container.querySelector(".Todo")
-//     expect(topTodo).not.toContainHTML("buca di peppo");
-//   });
+  it ("renders correct info and edit/delete button", function () {
+    const { container } = render(<EditableTodo todo={testTodo} />)
+    const topTodo = container.querySelector(".Todo")
+    expect(topTodo).toContainHTML("celebrate bday");
+    expect(container).toContainHTML("EditableTodo-delBtn");
+    expect(container).toContainHTML("EditableTodo-toggle");
+
+  });
+  it ("renders correct info when isEditing is true", function () {
+    const { container } = render(<EditableTodo todo={testTodo} />)
+    const editBtn = container.querySelector(".EditableTodo-toggle");
+    fireEvent.click(editBtn)
+    expect(container).toContainHTML("NewTodoForm");
+    expect(container).not.toContainHTML("EditableTodo-toggle");
+    expect(container).not.toContainHTML("EditableTodo-delBt");
+
+  });
 });
 
